@@ -6,8 +6,11 @@ html, body {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+    font-family: 'MS Gothic';
 }
 .site-container {
+    width: 100vw;
+    height: 56.25vw;
     position: relative;
 }
 .background-image {
@@ -25,4 +28,54 @@ html, body {
 }
 .background-image__phase {
     background-image: url(../img/zaikuonarrives_0000.png);
+}
+
+/*Position Modifiers*/
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.top-left {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+}
+.bottom-left {
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+}
+.bottom-right {
+    position: absolute;
+    left: 90%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+}
+
+/*Title buttons*/
+.site-container--button {
+    border: 3px solid;
+    box-shadow: 3px 3px 3px grey;
+    background: white;
+    padding: 1vw;
+    cursor: pointer;
+}
+.start-button {
+    border-radius: .5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.gallery {
+    border-radius: 100%;
+    height: 8vw;
+    width: 8vw;
+}
+.chapter-select {
+    border-radius: 100%;
+    height: 8vw;
+    width: 8vw;
 }
