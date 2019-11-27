@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.site-container {
+    position: relative;
+}
+.background-image {
+    width: 100vw;
+    height: 56.25vw;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.background-image__base {
+    background-image: url(../img/title.png);
+}
+.background-image__phase {
+    background-image: url(../img/zaikuonarrives_0000.png);
+}
