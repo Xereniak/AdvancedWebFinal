@@ -11,6 +11,7 @@ html, body {
 .site-container {
     width: 100vw;
     height: 56.25vw;
+    max-height: 100vh;
     position: relative;
 }
 .background-image {
@@ -27,7 +28,7 @@ html, body {
 }
 .background-image__phase {
     opacity: 0;
-/*    display: none;*/
+    display: none;
 }
 
 /*Position Modifiers*/
@@ -103,7 +104,9 @@ html, body {
     color: white;
 }
 /*Image Classes*/
-
+.blackscreen {
+    background-image: rgb(0,0,0);
+}
 .image__title {
     background-image: url(../img/title.png);
 }

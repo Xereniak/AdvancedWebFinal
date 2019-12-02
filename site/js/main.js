@@ -1,9 +1,10 @@
 var pageImg = [
+    0 => "blackscreen",
     "image__title",
     "image__zaikuon-arrives00",
     "image__zaikuon-arrives01"
 ];
-var pageCount = 2;
+var pageCount = 0;
 var transitionSpeed = 1000;
 var textArray = [
     "",
@@ -54,7 +55,7 @@ function eventListeners() {
 drawPage();
 function drawPage() {
     buttonCheck(); //updates array key for buttons
-    $("#site-container").html(`<div id="background-image__base" class="background-image background-image__base ${pageImg[imgCheck(0)]}"></div><div id="background-image__phase" class="background-image background-image__phase ${pageImg[imgCheck(1)]}"></div>${buttons[pageButtons]}`); //overwrites the DOM with the transitional images and buttons
+    $("#site-container").html(`<div id="background-image__base" class="background-image background-image__base ${pageImg[imgCheck(-1)]}"></div><div id="background-image__phase" class="background-image background-image__phase ${pageImg[imgCheck(0)]}"></div>${buttons[pageButtons]}`); //overwrites the DOM with the transitional images and buttons
     if (pageCount > 0) {
         $('#skip-button').on("click", nextPageFast);
     }; //checks if there's a page with skip-button, then attaches the event listener for fast browsing
@@ -63,6 +64,7 @@ function drawPage() {
     if (pageCount > 15 && pageCount < 19) {
         $('#text').addClass('text-window__invert')
     }; //Update later to check for page if (black background) {invert color} 
+    
     console.log(textArray[pageCount])
     eventListeners();
 }
