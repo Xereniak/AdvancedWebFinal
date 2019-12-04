@@ -1,19 +1,23 @@
 * {
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     margin: 0;
     overflow: hidden;
     height: 100vh;
     width: 100vw;
     font-family: 'MS Gothic';
 }
+
 .site-container {
     width: 100vw;
     height: 56.25vw;
     max-height: 100vh;
     position: relative;
 }
+
 .background-image {
     width: 100vw;
     height: 56.25vw;
@@ -24,10 +28,10 @@ html, body {
     left: 0px;
 }
 
-.background-image__base {
-}
+.background-image__base {}
+
 .background-image__phase {
-    opacity: 0;
+    /*    opacity: 0;*/
     display: none;
 }
 
@@ -36,36 +40,41 @@ html, body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
 .top-left {
     position: absolute;
     left: 5%;
     top: 5%;
 }
+
 .top-right {
     position: absolute;
     left: 95%;
     top: 5%;
-    transform: translate(-100%,0);
+    transform: translate(-100%, 0);
 }
+
 .bottom-left {
     position: absolute;
     left: 5%;
     top: 95%;
-    transform: translate(0%,-100%);
+    transform: translate(0%, -100%);
 }
+
 .bottom-right {
     position: absolute;
     left: 95%;
     top: 95%;
-    transform: translate(-100%,-100%);
+    transform: translate(-100%, -100%);
 }
+
 .bottom-center {
     position: absolute;
     left: 50%;
     top: 98%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%, -100%);
 }
 
 /*Title buttons*/
@@ -76,49 +85,130 @@ html, body {
     padding: 1vw;
     cursor: pointer;
 }
+
 .start-button {
     border-radius: .5vw;
     text-transform: uppercase;
     font-weight: 700;
 }
+
+.volume-control {
+    border-radius: 100%;
+    height: 4vw;
+    width: 4vw;
+    background-image: url(../img/web-final-button-volume.png);
+    background-size: cover;
+}
+
 .gallery {
     border-radius: 100%;
     height: 8vw;
     width: 8vw;
+    background-image: url(../img/web-final-button-gallery.png);
+    background-size: cover;
 }
+
 .chapter-select {
     border-radius: 100%;
     height: 8vw;
     width: 8vw;
+    background-image: url(../img/web-final-button-chapters.png);
+    background-size: cover;
 }
 
 .text-window {
     border: 1px solid;
+    font-size: 2.5vw;
     box-shadow: 0px 5px 5px grey;
-    background: rgba(255,255,255,.5);
-    padding: 0 2vw;
+    background: rgba(255, 255, 255, .8);
+    padding: 1vw 2vw;
     width: 98vw;
     height: 20vw;
 }
+
 .text-window__invert {
     color: white;
 }
+
+.skip-button {
+    height: 4vw;
+    width: 8vw;
+    background-image: url(../img/web-final-button-skip.png);
+    background-size: cover;
+}
+
+.speaker-badge {
+    height: 4.5vw;
+    width: 30vw;
+    text-align: center;
+    font-size: 3vw;
+    position: absolute;
+    left: 5vw;
+    bottom: 20vw;
+    padding: .5vw;
+}
+
 /*Image Classes*/
 .blackscreen {
-    background-image: rgb(0,0,0);
+    background-image: url(../img/blackscreen.png);
 }
+
+.whitescreen {
+    background-image: url(../img/whitescreen.png)
+}
+
 .image__title {
     background-image: url(../img/title.png);
 }
+
 .image__zaikuon-arrives00 {
     background-image: url(../img/zaikuonarrives_0000.png);
 }
+
 .image__zaikuon-arrives01 {
     background-image: url(../img/zaikuonarrives_0001.png);
 }
+
 .image__zaikuon-arrives02 {
     background-image: url(../img/zaikuonarrives_0002.png);
 }
-.image__zaikuon-arrives03 {
-    background-image: url(../img/zaikuonarrives_0003.png);
+
+.image__lightship {
+    background-image: url(../img/lightship.png);
+}
+
+.image__despair00 {
+    background-image: url(../img/despair_0000.png);
+}
+
+.image__despair01 {
+    background-image: url(../img/despair_0001.png);
+}
+
+.image__despair02 {
+    background-image: url(../img/despair_0002.png);
+}
+
+.image__despair03 {
+    background-image: url(../img/despair_0003.png);
+}
+
+.image__despair04 {
+    background-image: url(../img/despair_0004.png);
+}
+
+.image__despair05 {
+    background-image: url(../img/despair_0005.png);
+}
+
+.image__despair06 {
+    background-image: url(../img/despair_0006.png);
+}
+
+.image__despair07 {
+    background-image: url(../img/despair_0007.png);
+}
+
+.image__mythologydown00 {
+    background-image: url(../img/mythologydown_0000.png);
 }
