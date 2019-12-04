@@ -17,7 +17,7 @@ var pageImg = [
 ];
 pageImg[-1] = "blackscreen";
 pageImg[-2] = "whitescreen";
-var pageCount = 31;
+var pageCount = 0;
 var transitionSpeed = 1000;
 var speakerArray = [""];
 //Start of speakerArray assignment
@@ -42,7 +42,7 @@ speakerArray[36] = "Zaikuon";
 var textArray = [
     "",
     "God Zaikuon stepped down onto the ground at the base of the World Tree.",
-    "",
+    "...",
     "An intense aura of yellow divinity clothed his form, giving an impression of majesty suitable to the title of 'God'.",
     "But Gods do not step into the mortal realm on mere whim. Dwelling there in flesh requires divinity as fuel, a precious commodity to these beings who protect the world against Outsiders",
     "God Zaikuon was here for someone.",
@@ -77,13 +77,15 @@ var textArray = [
     '-',
     'A massive shadow appeared over the World Tree.',
     '"Fuhahahaha! Let me to teach you what it means to have an abundance of divinity!"',
+    'A massive sci-fi looking vessel stands in the sky. It looks completely out of place here in a fantasy world, but it seems gods get to break these sorts of rules when they feel like it.',
+    'In response, Satou pulls a Dimensional Boat from his Inventory and climbs inside.'
 
 
 ]
 var buttons = [
     `<div id="start-button" class="start-button site-container--button centered">An ominous presence decends...</div><div id="volume-control" class="volume-control site-container--button top-left"></div><div id="chapter-select" class="chapter-select site-container--button bottom-left"></div><div id="gallery" class="gallery site-container--button bottom-right"></div><div id="credits" class="credits site-container--button top-right">Imaginary Fears: Credits</div>`,
     `<div id="volume-control" class="volume-control site-container--button top-left"></div><div id="text-window" class="text-window bottom-center"><p id="text"></p></div><div id="skip-button" class="skip-button site-container--button bottom-right"></div><div id="speaker-badge" class="speaker-badge site-container--button"></div>`,
-    `<div class="text-window site-container-button bottom-center"><p>This website is a rewritten version of events from <a href="https://www.sousetsuka.com/2019/06/death-march-kara-hajimaru-isekai_24.html">Death March into the Parallel World Rhapsody Volume 17 Chapter 21.</a> All other assets within the site are created as originals by the site author.</p></div>`
+    `<div class="text-window site-container-button bottom-center"><p>This website is a rewritten version of events from <a href="https://www.sousetsuka.com/2019/06/death-march-kara-hajimaru-isekai_24.html">Death March into the Parallel World Rhapsody Volume 17 Chapter 21.</a> The original work was written by Hiro Ainana.<br><hr>All other assets within the site are created as originals by the site author.</p></div>`
 ];
 var pageButtons;
 buttonCheck();
@@ -118,8 +120,10 @@ function imgCheck(a) {
         imgCount = 3
     } else if (pageCount < 32) {
         imgCount = 1
-    } else if (pageCount < 33) {
+    } else if (pageCount < 35) {
         imgCount = -2
+    } else if (pageCount < 40) {
+        imgCount = 4
     }
     pageCount -= a
     return imgCount

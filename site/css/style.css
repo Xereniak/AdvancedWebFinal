@@ -146,6 +146,8 @@ body {
     left: 5vw;
     bottom: 20vw;
     padding: .5vw;
+    cursor: default;
+    background: rgba(255, 255, 255, .5)
 }
 
 /*Image Classes*/
