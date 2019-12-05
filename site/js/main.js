@@ -78,7 +78,7 @@ var textArray = [
     'A massive shadow appeared over the World Tree.',
     '"Fuhahahaha! Let me to teach you what it means to have an abundance of divinity!"',
     'A massive sci-fi looking vessel stands in the sky. It looks completely out of place here in a fantasy world, but it seems gods get to break these sorts of rules when they feel like it.',
-    'In response, Satou pulls a Dimensional Boat from his Inventory and climbs inside.'
+    'In response, Satou pulls a Dimensional Boat from his Inventory and climbs inside.',
 
 
 ]
@@ -171,8 +171,9 @@ function drawPage() {
     if (pageCount > 0) {
         $('#skip-button').on("click", nextPageFast);
     }; //checks if there's a page with skip-button, then attaches the event listener for fast browsing
-    if (speakerArray[pageCount] != undefined) {
-        $('#speaker-badge').html(speakerArray[pageCount]);
+    $('#speaker-badge').html(speakerArray[pageCount]);
+    if (speakerArray[pageCount] == undefined) {
+        $('#speaker-badge').addClass('invisible');
     }
 
     $('#text').html(textArray[pageCount]); //adds text to the window

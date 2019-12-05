@@ -76,7 +76,10 @@ body {
     top: 98%;
     transform: translate(-50%, -100%);
 }
-
+/*Display Modifiers*/
+.invisible {
+    display: none;
+}
 /*Title buttons*/
 .site-container--button {
     border: 3px solid;
@@ -98,6 +101,7 @@ body {
     width: 4vw;
     background-image: url(../img/web-final-button-volume.png);
     background-size: cover;
+    display: none;
 }
 
 .gallery {
@@ -106,6 +110,7 @@ body {
     width: 8vw;
     background-image: url(../img/web-final-button-gallery.png);
     background-size: cover;
+    display: none;
 }
 
 .chapter-select {
@@ -114,6 +119,7 @@ body {
     width: 8vw;
     background-image: url(../img/web-final-button-chapters.png);
     background-size: cover;
+    display: none;
 }
 
 .text-window {
